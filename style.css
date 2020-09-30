@@ -1,0 +1,83 @@
+body{
+    background: #0e0b14;
+}
+.logo{
+    background: #111112;
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    box-shadow: 0 0 15px #1111;
+}
+.top{
+    background:linear-gradient(90deg, #ba5b02,#d47a04);
+    height: 85px;
+    width: 300px;
+    border-radius: 7px;
+    position: absolute;
+    transform: skew(-15deg) rotate(-15deg);
+    left: 120px;
+    top: 152px;
+    perspective: 300;
+    box-shadow: 0 0 5px #d47a04;
+    animation: topzet 2.5s infinite;
+}
+@keyframes topzet{
+    0%{
+        opacity:0;
+        left: 200px;
+    }
+    100%{
+        opacity: 1;
+        left: 120px;
+    }
+}
+.center{
+    background: #d47a04;
+    height: 85px;
+    width: 300px;
+    border-radius: 7px;
+    position: absolute;
+    left: 120px;
+    bottom: 238px;
+    transform: skew(15deg) rotate(15deg);
+    z-index: 1;
+    perspective: 100;
+    box-shadow: 0 0 5px #d47a04;
+    animation: centerzet 2.5s infinite;
+}
+@keyframes centerzet{
+    0%{
+        opacity: 0;
+        bottom: 0;
+    }
+    100%{
+        opacity: 1;
+        bottom: 238px;
+    }
+}
+.bot{
+    background: linear-gradient(270deg, #ba5b02,#d47a04);
+    height: 85px;
+    width: 300px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 161px;
+    left: 130px;
+    transform:rotate(-15deg) skew(-15deg);
+    perspective: 300;
+    box-shadow: 0 0 5px #d47a04;
+    animation: botzet 2.5s infinite;
+}
+@keyframes botzet{
+    0%{
+        opacity:0;
+        left: 0;
+    }
+    100%{
+        opacity: 1;
+        left: 130px;
+    }
+}
